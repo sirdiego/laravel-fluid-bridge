@@ -31,18 +31,10 @@ class FluidEngine implements EngineInterface
      */
     public function get($path, array $data = [])
     {
-        $view = new TemplateView();
+        /** @var TemplateView $view */
+        $view = resolve(TemplateView::class);
         $view->setRenderingContext($this->context);
         $paths = $view->getTemplatePaths();
-        $paths->setTemplateRootPaths(config('fluid.rootPaths.template', [
-            base_path('resources/views/Templates/')
-        ]));
-        $paths->setLayoutRootPaths(config('fluid.rootPaths.layout', [
-            base_path('resources/views/Layouts/')
-        ]));
-        $paths->setPartialRootPaths(config('fluid.rootPaths.partial', [
-            base_path('resources/views/partials/')
-        ]));
         $paths->setTemplatePathAndFilename($path);
 
         $view->assignMultiple($data);
