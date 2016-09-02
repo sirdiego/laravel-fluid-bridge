@@ -1,0 +1,21 @@
+{
+  "name": "diego/laravel-fluid-bridge",
+  "description": "TYPO3.Fluid support for Laravel.",
+  "require": {
+    "typo3fluid/fluid": "^1.0",
+    "laravel/framework": "^5.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "diego",
+      "email": "diego@sirdiego.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Diego\\Fluid\\": "src/"
+    }
+  }
+}
