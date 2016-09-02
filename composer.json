@@ -17,5 +17,8 @@
     "psr-4": {
       "Diego\\Fluid\\": "src/"
     }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.7"
   }
 }

@@ -89,6 +89,4 @@ class FluidServiceProvider extends ServiceProvider
             return $view;
         });
     }
-
-
 }

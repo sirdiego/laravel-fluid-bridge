@@ -1,5 +1,6 @@
 <?php
 namespace Diego\Fluid\ViewHelpers\Uri;
+
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**

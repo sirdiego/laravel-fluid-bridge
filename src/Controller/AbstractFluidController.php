@@ -32,7 +32,7 @@ abstract class AbstractFluidController extends Controller
         $view->setRenderingContext($context);
         $this->view = $view;
         $result = parent::callAction($method, $parameters);
-        if ($result === NULL) {
+        if ($result === null) {
             $result = $this->view->render();
         }
         return $result;
