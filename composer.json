@@ -19,6 +19,7 @@
     }
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.7"
+    "squizlabs/php_codesniffer": "^2.7",
+    "phpmd/phpmd": "^2.4"
   }
 }

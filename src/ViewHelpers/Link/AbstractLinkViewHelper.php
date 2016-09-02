@@ -27,12 +27,22 @@ abstract class AbstractLinkViewHelper extends AbstractTagBasedViewHelper
      */
     public function render()
     {
-        if ($this->renderChildrenClosure) {
-            $content = call_user_func($this->renderChildrenClosure);
-        } else {
-            $content = $this->renderChildren();
-        }
+        $content = $this->getContent();
         $this->tag->setContent($content);
         return parent::render();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getContent()
+    {
+        if ($this->renderChildrenClosure) {
+            $content = call_user_func($this->renderChildrenClosure);
+            return $content;
+        }
+
+        $content = $this->renderChildren();
+        return $content;
     }
 }
