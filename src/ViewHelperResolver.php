@@ -13,7 +13,7 @@ class ViewHelperResolver extends \TYPO3Fluid\Fluid\Core\ViewHelper\ViewHelperRes
      */
     public function __construct()
     {
-        $this->addNamespace('_f', 'App\\ViewHelpers');
+        $this->addNamespace('_f', 'Diego\\Fluid\\ViewHelpers');
     }
 
     /**
